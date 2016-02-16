@@ -1,0 +1,173 @@
+[33mcommit 6912e0688388235ca7090853c43e73d24fbf9085[m
+Author: Anna Schuhbauer <acschuhbauer@gmail.com>
+Date:   Thu Feb 11 14:28:27 2016 -0800
+
+    wip - cleaning the notebook a bit
+
+[33mcommit 18c008819b0bea9b77c83a5de847fa91a81c355e[m
+Author: Anna Schuhbauer <acschuhbauer@gmail.com>
+Date:   Thu Feb 11 14:03:27 2016 -0800
+
+    wip
+
+[33mcommit f50ac95e0dbbfc9d2d51e57f4af0e99eb2c580f5[m
+Author: Anna Schuhbauer <acschuhbauer@gmail.com>
+Date:   Mon Feb 8 14:14:43 2016 -0800
+
+    update requirements.txt, README.md
+
+[33mcommit bdf105232bd4b8e0437419a1064b2d2a82131771[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Wed Feb 3 12:50:40 2016 -0800
+
+    graphs by major fishing nations and major subsidizing nation, however, continued in excel for grouping EU due to time constraints, still need to fix this and transfer into code, new graphs for apendix to plot data_groups which are divided into 3 categories based on where the data come from and their accuracy
+
+[33mcommit 26970e607ad4203961da897d5b9a37bf4bcbe4d0[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Thu Jan 28 16:39:29 2016 -0800
+
+    checked errors and found missing change in developed to true and devleoping to false, now back running
+
+[33mcommit 19355ebdf38113f7b3ea67574e16571bf19c6f1f[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Thu Jan 28 13:26:01 2016 -0800
+
+    sorting dataframes and creating pivot table to graph groups by developed and subsidies subtypes
+
+[33mcommit 6f4a39164c694a72ad16e23a1d5bdc653019e699[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Thu Jan 21 15:57:57 2016 -0800
+
+    all subsidies data now including fuel, most graphs prepared as bar charts, next steps pie charts for all subregions
+
+[33mcommit 97d07dab210938500851310ebb7fd1d1cfc954e9[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Wed Jan 20 14:33:39 2016 -0800
+
+    to avoid values that are above 100 percent use a cap for the estimate percentage values that does not allow values exceed 1, creat new notebook called ssf subsidies capped
+
+[33mcommit 69eff899d8a17c7e5dad0318e2cd9141478b5ffa[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Mon Jan 18 22:24:10 2016 -0800
+
+    all now done in Pandas and no data manipulation happening in csv anymore, gap filling of NaN values which represent countries and subtypes that were not assessed but estimated, merge all together and create csv file SSF_subsidies_estimated_assessed, the 'factor' calculation is still wrong, need to re-do the whole procedure once it is clear how to best estimate the missing values using catch data from SAU
+
+[33mcommit c4919b91897c9b42f03534f2f2ade792294f38e7[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Mon Jan 18 17:37:04 2016 -0800
+
+    getting data ready with replacing gaps of total subsidies type by subregion with the value from region to have a total value for ach category as some subregions are represented by only few countries
+
+[33mcommit 65e52130105d4f6d1b489537047a737f1b72fcd0[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Sun Jan 17 17:25:32 2016 -0800
+
+    going through all data and finding a different way to calculate the ration factor that describes relationship of SSF catch to total catch to use to estimate country's SSF subsidies where value is missing, change all percentage into ratios/decimals and check results.
+
+[33mcommit a3c4f0a1df13288aa29d59054a4ef95dd0724857[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Wed Jan 13 19:22:58 2016 -0800
+
+    clean code and renew all SSF in pandas to bring fuel estimates into data, need to still figure out how some SSF percentages estimates are now above 100 percent, probably due to the factor calulcation, this needs to be sorted out before continuing with visualization
+
+[33mcommit d610b368efdd0cdb8d3cc7c55142e126787bb88d[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Tue Jan 12 18:21:18 2016 -0800
+
+    looking for errors, going through each data file that has been created, finding different gaps in data, due to either misspellings or as for example means are calculated for subregion whereas there are no assessed SSF subsidy data available form the countries in those subregions for all subtypes, therefore calculating mean per region to fill those gaps
+
+[33mcommit 191f32b199933b3c0d2130e106b4d013a83010ec[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Mon Jan 11 11:49:29 2016 -0800
+
+    more graphs this time including annotations in the bar chart providing percentage per SSF subsidies
+
+[33mcommit 3f7d95591c0ae58de3c5cf956ddf25dfe5db620e[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Fri Jan 8 18:45:29 2016 -0800
+
+    figures saved, learn to personalize bar charts legends, fonts, stacked etc.
+
+[33mcommit d5cf3949533d4739aade9d46a893cab622627464[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Wed Jan 6 09:19:08 2016 -0800
+
+    graphs as bar charts and learning how to personalize them e.g. legends, titles, fonts etc.
+
+[33mcommit 5cfb369e2e1b733a6c1ca82e41ce8d9ae55b4ecb[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Thu Dec 31 10:40:03 2015 -0800
+
+    first graphs show per region and per subregion ssf subsidies compared to total subsidies, bar graphs stacked and next to each other, learning to personalize graph and design of graphs
+
+[33mcommit 46c3cfef6747a2406717950c42e5fa4d6c626877[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Sat Dec 19 13:20:02 2015 -0800
+
+    end of first analysis, calculate total SSF subsidies based on both assessed and estimated data for all countries and all subsidies type except fuel subsidies
+
+[33mcommit 0ea9b9d8446ec3cf2fc1510cd91a8e4206596b81[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Fri Dec 18 17:37:03 2015 -0800
+
+    new notebook started called SSF subsidies, now following the code used already before but with less distraction, data set up with original subsidies data per country and type merged with subregions, include SSF catch and calculate SSF average catches per regions as well as average SSF subsidies per region and merge with original subsidies 2009 databse
+
+[33mcommit 1d76503ad190a1d3ea0561ad2225e851f9efc7c4[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Fri Dec 18 10:48:52 2015 -0800
+
+    merged dataframe for all SSF subsidies now contains two columns, one that shows allSSF estimated susbsidy percentages based on averages SSF catches and average pecents of SSF per subregion, now a new column is created that has all NaN values from SSF subsidies assessed filled with SSF subsidies estimated
+
+[33mcommit 6ba1e95a8af43774bafbfe530446b5ce366846a1[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Tue Dec 15 17:27:00 2015 -0800
+
+    create new table by merging subsidies country data with dataframe containing all new SSF subsidies data estimates for all countries, now ready to start proper analysis after gaps for missing countries are filled
+
+[33mcommit c090f0fa443e872f9f51a70f11e62068834af795[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Mon Dec 14 20:34:25 2015 -0800
+
+    to estimates countries where no data exist average ssf catch is calculated by subregion and merge with per country data for all countries using basic calculations in pandas, creating new columns and merging tables for output as catch subregion meancatch.
+
+[33mcommit 0bb63f830052715a52d347ba5f8867df3ee61e2c[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Tue Dec 1 13:23:07 2015 -0800
+
+    merging tables of subsidies2009 data with catch data per country and EEZ, calculate avaerage catch per subregion and EEZ or Fleet
+
+[33mcommit c6c27f2959999bb79c80bfbceb8415755e27e692[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Wed Nov 25 19:48:48 2015 -0800
+
+    subsidies data 2009 upload and merge with subregions, pandas change to pd for short and new names for most of the actions to be more descriptive and recognizable for what they are
+
+[33mcommit d9c49a223b01ba5d35ee6550a7dddaffa82fa7bd[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Mon Nov 23 14:27:50 2015 -0800
+
+    groupby subregions and calculate the mean of each subsidy type per subregion
+
+[33mcommit e2a0ad7262b57c78bae1a99f8c5bd5cdb6c62abc[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Tue Nov 17 21:31:35 2015 -0800
+
+    up-date subsidies first groupby analysis
+
+[33mcommit baf60c40e4283b61ee965995c2d5deea1bd2721e[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Sat Nov 14 13:01:44 2015 -0800
+
+    remove lock file
+
+[33mcommit 61faf3756d11af7801a1f0c0e0364a10e326788a[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Sat Nov 14 13:00:20 2015 -0800
+
+    remove csv files, add *.csv to gitignore
+
+[33mcommit 894741f6203ee6527a280912a7d419881c452215[m
+Author: anna <acschuhbauer@gmail.com>
+Date:   Sat Nov 14 12:55:31 2015 -0800
+
+    inital commit
